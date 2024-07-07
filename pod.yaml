@@ -1,0 +1,19 @@
+### this is for creating remote repo and clone to local repo practise
+
+--- 
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web
+  labels:
+    name: web
+spec:
+  containers:
+  - name: web
+    image: <Image>
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80
